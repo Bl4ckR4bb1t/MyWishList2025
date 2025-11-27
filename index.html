@@ -33,6 +33,7 @@
       backdrop-filter: blur(4px);
     }
 
+    /* Christmas Lights */
     .lights {
       position: fixed;
       top: 0;
@@ -57,6 +58,7 @@
       50% { opacity: 0.3; }
     }
 
+    /* Snow */
     .snowflake {
       position: fixed;
       top: -10px;
@@ -69,7 +71,7 @@
       to { transform: translateY(110vh); }
     }
 
-    /* FIXED POPUP LAYER */
+    /* Popup Styles */
     #popupScreen {
       position: fixed;
       top: 0;
@@ -86,13 +88,11 @@
       text-align: center;
       padding: 20px;
     }
-
     #popupScreen h2 {
       font-size: 1.5rem;
       max-width: 300px;
       text-shadow: 0 0 10px red;
     }
-
     #popupScreen button {
       margin-top: 20px;
       padding: 10px 20px;
@@ -108,15 +108,17 @@
 </head>
 <body>
 
-  <!-- POPUP SCREEN -->
+  <!-- Popup Screen -->
   <div id="popupScreen">
     <img src="https://i.imgur.com/b3a7E3X.png"
          style="width: 200px; margin-bottom: 20px; border-radius: 15px;">
-    <h2>I see you peeking… Did you pick my name? 🎁</h2>
+    <h2>Caught you peeking! So… is it me you got? 😊</h2>
     <button onclick="enterSite()">Enter Wishlist</button>
+    <!-- Jingle bell sound -->
+    <audio id="jingleBell" src="https://www.soundjay.com/buttons/sounds/bell-ringing-05.mp3" autoplay></audio>
   </div>
 
-  <!-- CHRISTMAS LIGHTS -->
+  <!-- Christmas Lights -->
   <div class="lights" id="lights"></div>
 
   <h1>My Wishlist 🎄</h1>
